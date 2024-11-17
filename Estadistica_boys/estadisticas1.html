@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas Niños</title>
+    <link rel="stylesheet" href="../stylesEVENTO.css">
+    <link rel="icon" href="imagenes/logo-ai-koi.ico">
+    <style>
+        /* Estilos básicos para la gráfica */
+        .chart-container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .chart-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .chart {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+
+        .chart-bar {
+            width: 15%;
+            background: linear-gradient(180deg, #4CAF50, #2e7d32);
+            text-align: center;
+            color: white;
+            font-size: 0.9em;
+            border-radius: 5px 5px 0 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .chart-bar:hover {
+            background: linear-gradient(180deg, #66BB6A, #388E3C);
+            transform: scale(1.1);
+        }
+
+        .chart-bar-label {
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://"><u>Inicio</u></a></li>
+                <li><a href="https://"><u>Sobre Nosotros</u></a></li>
+                <li><a href="https://"><u>Servicios</u></a></li>
+                <li><a href="https://"><u>Contacto</u></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="event-section">
+        <div class="left-side">
+            <div class="user-icon">
+                <img src="../imagenes/ADMING.png" alt="Icono de Usuario">
+            </div>
+            <h2>Estadísticas Niños</h2>
+        </div>
+
+        <!-- Contenedor de la gráfica -->
+        <div class="chart-container">
+            <div class="chart-title">Niños Participantes por Actividad</div>
+            <div class="chart">
+                <div class="chart-bar" style="height: 50%;">
+                    50
+                    <div class="chart-bar-label">Dibujo</div>
+                </div>
+                <div class="chart-bar" style="height: 70%;">
+                    70
+                    <div class="chart-bar-label">Música</div>
+                </div>
+                <div class="chart-bar" style="height: 30%;">
+                    30
+                    <div class="chart-bar-label">Deporte</div>
+                </div>
+                <div class="chart-bar" style="height: 90%;">
+                    90
+                    <div class="chart-bar-label">Baile</div>
+                </div>
+                <div class="chart-bar" style="height: 60%;">
+                    60
+                    <div class="chart-bar-label">Lectura</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="../imagenes/facebook.png" alt="Facebook" height="30px"></a>
+            <a href="#"><img src="../imagenes/Tik-tok.png" alt="Tik-Tok" height="30px"></a>
+            <a href="#"><img src="../imagenes/Twiter.png" alt="Twitter" height="30px"></a>
+            <a href="#"><img src="../imagenes/instagram.png" alt="Instagram" height="30px"></a>
+            <a href="#"><img src="../imagenes/WhatsApp.png" alt="WhatsApp" height="30px"></a>
+            <a href="#"><img src="../imagenes/Gmail.png" alt="Gmail" height="30px"></a>
+            <a href="#"><img src="../imagenes/You tube.png" alt="YouTube" height="30px"></a>
+            <a href="#"><img src="../imagenes/Linkedin.png" alt="Linkedin" height="30px"></a>
+        </div>
+        <p>Fundación Ai Koi - <a href="#">Términos y Condiciones</a> - <a href="#">Aviso de Privacidad</a></p>
+    </footer>
+</body>
+</html>
