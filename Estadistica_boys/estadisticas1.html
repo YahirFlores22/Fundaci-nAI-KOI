@@ -16,7 +16,8 @@
 
         .chart-title {
             font-size: 1.5em;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
         }
 
         /* Gráfico de barras horizontales */
@@ -25,6 +26,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+            margin-bottom: 30px;
         }
 
         .bar {
@@ -34,7 +36,7 @@
         }
 
         .bar-label {
-            width: 100px;
+            width: 150px;
             text-align: right;
         }
 
@@ -47,15 +49,16 @@
             font-weight: bold;
         }
 
-        /* Nuevos colores */
-        .bar-value.femenino { width: 30%; background: linear-gradient(90deg, #4CAF50, #81C784); }
-        .bar-value.masculino { width: 30%; background: linear-gradient(90deg, #FFC107, #FFD54F); }
-        .bar-value.edad-0-6 { width: 15%; background: linear-gradient(90deg, #03A9F4, #4FC3F7); }
-        .bar-value.edad-7-12 { width: 15%; background: linear-gradient(90deg, #E91E63, #F06292); }
-        .bar-value.edad-13-17 { width: 10%; background: linear-gradient(90deg, #9C27B0, #BA68C8); }
-        .bar-value.estado-mexico { width: 10%; background: linear-gradient(90deg, #FF5722, #FF8A65); }
-        .bar-value.estado-hidalgo { width: 10%; background: linear-gradient(90deg, #607D8B, #B0BEC5); }
-        .bar-value.ciudad-mexico { width: 10%; background: linear-gradient(90deg, #8BC34A, #C5E1A5); }
+        /* Colores diferenciados */
+        .bar-value.femenino { width: 55%; background: linear-gradient(90deg, #4CAF50, #81C784); }
+        .bar-value.masculino { width: 45%; background: linear-gradient(90deg, #FFC107, #FFD54F); }
+        .bar-value.edad-0-17 { width: 30%; background: linear-gradient(90deg, #03A9F4, #4FC3F7); }
+        .bar-value.edad-18-59 { width: 50%; background: linear-gradient(90deg, #E91E63, #F06292); }
+        .bar-value.edad-60-mas { width: 20%; background: linear-gradient(90deg, #9C27B0, #BA68C8); }
+        .bar-value.estado-mexico { width: 30%; background: linear-gradient(90deg, #FF5722, #FF8A65); }
+        .bar-value.estado-hidalgo { width: 25%; background: linear-gradient(90deg, #607D8B, #B0BEC5); }
+        .bar-value.ciudad-mexico { width: 25%; background: linear-gradient(90deg, #8BC34A, #C5E1A5); }
+        .bar-value.otros { width: 20%; background: linear-gradient(90deg, #FF9800, #FFCC80); }
     </style>
 </head>
 
@@ -81,39 +84,55 @@
 
         <!-- Contenedor de la gráfica -->
         <div class="chart-container">
-            <div class="chart-title">Distribución de Participación</div>
+
+            <!-- Sección 1: Género -->
+            <div class="chart-title">Distribución por Género (100%)</div>
             <div class="bar-chart">
                 <div class="bar">
                     <span class="bar-label">Femenino</span>
-                    <div class="bar-value femenino">30%</div>
+                    <div class="bar-value femenino">55%</div>
                 </div>
                 <div class="bar">
                     <span class="bar-label">Masculino</span>
-                    <div class="bar-value masculino">30%</div>
+                    <div class="bar-value masculino">45%</div>
+                </div>
+            </div>
+
+            <!-- Sección 2: Edad -->
+            <div class="chart-title">Distribución por Rango de Edad (100%)</div>
+            <div class="bar-chart">
+                <div class="bar">
+                    <span class="bar-label">Edad 0-17</span>
+                    <div class="bar-value edad-0-17">30%</div>
                 </div>
                 <div class="bar">
-                    <span class="bar-label">Edad 0-6</span>
-                    <div class="bar-value edad-0-6">15%</div>
+                    <span class="bar-label">Edad 18-59</span>
+                    <div class="bar-value edad-18-59">50%</div>
                 </div>
                 <div class="bar">
-                    <span class="bar-label">Edad 7-12</span>
-                    <div class="bar-value edad-7-12">15%</div>
+                    <span class="bar-label">Edad 60-más</span>
+                    <div class="bar-value edad-60-mas">20%</div>
                 </div>
-                <div class="bar">
-                    <span class="bar-label">Edad 13-17</span>
-                    <div class="bar-value edad-13-17">10%</div>
-                </div>
+            </div>
+
+            <!-- Sección 3: Ubicación -->
+            <div class="chart-title">Distribución por Ubicación (100%)</div>
+            <div class="bar-chart">
                 <div class="bar">
                     <span class="bar-label">Estado de México</span>
-                    <div class="bar-value estado-mexico">10%</div>
+                    <div class="bar-value estado-mexico">30%</div>
                 </div>
                 <div class="bar">
                     <span class="bar-label">Estado de Hidalgo</span>
-                    <div class="bar-value estado-hidalgo">10%</div>
+                    <div class="bar-value estado-hidalgo">25%</div>
                 </div>
                 <div class="bar">
                     <span class="bar-label">Ciudad de México</span>
-                    <div class="bar-value ciudad-mexico">10%</div>
+                    <div class="bar-value ciudad-mexico">25%</div>
+                </div>
+                <div class="bar">
+                    <span class="bar-label">Otros</span>
+                    <div class="bar-value otros">20%</div>
                 </div>
             </div>
         </div>
