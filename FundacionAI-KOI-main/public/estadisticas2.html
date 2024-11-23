@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas Discapacitados</title>
+    <link rel="stylesheet" href="../stylesEVENTO.css">
+    <link rel="icon" href="imagenes/logo-ai-koi.ico">
+    <style>
+        /* Contenedor principal de la gráfica */
+        .chart-container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .chart-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        /* Gráfico de barras horizontales */
+        .bar-chart {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bar-label {
+            width: 100px;
+            text-align: right;
+        }
+
+        .bar-value {
+            height: 30px;
+            background: linear-gradient(90deg, #4CAF50, #81C784);
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://"><u>Inicio</u></a></li>
+                <li><a href="https://"><u>Sobre Nosotros</u></a></li>
+                <li><a href="https://"><u>Servicios</u></a></li>
+                <li><a href="https://"><u>Contacto</u></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="event-section">
+        <div class="left-side">
+            <div class="user-icon">
+                <img src="../imagenes/ADMING.png" alt="Icono de Usuario">
+            </div>
+            <h2>Estadísticas Discapacitados</h2>
+        </div>
+
+        <!-- Contenedor de la gráfica -->
+        <div class="chart-container">
+            <div class="chart-title">Distribución de Participantes</div> <br>
+
+            <!-- Sección: Génro -->
+            <div>
+                <div class="section-title, chart-title">Género</div>
+                <div class="bar-chart" id="chart-gender"></div>
+            </div>
+
+            <!-- Sección: Rango de Edad -->
+            <div>
+                <div class="section-title, , chart-title">Rango de Edad</div>
+                <div class="bar-chart" id="chart-age"></div>
+            </div>
+
+            <!-- Sección: Ubicación -->
+            <div>
+                <div class="section-title, chart-title  ">Ubicación</div>
+                <div class="bar-chart" id="chart-location"></div>
+            </div>
+        </div>
+    </section>
+<footer>
+    <div class="social-media">
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjp2-rJx5mJAxUIMtAFHVIqHxAQFnoECBkQAQ&url=https%3A%2F%2Fwww.facebook.com%2FAi.Koi.oficial%2F%3Flocale%3Des_LA&usg=AOvVaw1VjPF7cmSkKKBLYAfW9dCA&opi=89978449"><img src="imagenes/facebook.png" alt="Facebook" height="30px"></a>
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjZy7jWx5mJAxW7G9AFHQMwLnIQFnoECBwQAQ&url=https%3A%2F%2Fwww.tiktok.com%2F%40aikoiac&usg=AOvVaw22x1FCCPF0RHRbiBHGM2Cc&opi=89978449"><img src="/imagenes/Tik-tok.png" alt="Tik-Tok" height="30px"></a>
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi-geXlx5mJAxXcL9AFHdSnK7gQFnoECBgQAQ&url=https%3A%2F%2Ftwitter.com%2FFundacionAiKoi%2Fstatus%2F1552848047675154432&usg=AOvVaw1sydvxuRd08o-3M50TlsnG&opi=89978449"><img src="/imagenes/Twiter.png" alt="Twitter" height="30px"></a>
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjn-onzx5mJAxVKMtAFHRUCONUQFnoECBQQAQ&url=https%3A%2F%2Fwww.instagram.com%2Ffundacionaikoi%2F%3Fhl%3Des-la&usg=AOvVaw31G9v8LPHnUG1gvzkEGGk8&opi=89978449"><img src="/imagenes/instagram.png" alt="Instagram" height="30px"></a>
+        <a href="#"><img src="/imagenes/WhatsApp.png" alt="WhatsApp" height="30px"></a>
+        <a href="#"><img src="/imagenes/Gmail.png" alt="Gmail" height="30px"></a>
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjpuOqHyJmJAxX1GtAFHZS2Be4QFnoECBUQAQ&url=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCDAO6QlG-OtKvWcZgra1rtQ&usg=AOvVaw1GSYxLwFianGEkfYT0WEPk&opi=89978449"><img src="/imagenes/You tube.png" alt="YouTube" height="30px"></a>
+        <a href="#"><img src="/imagenes/Linkedin.png" alt="Linkedin" height="30px"></a>
+    </div>
+    <p>Fundación Ai Koi - <a href="#">Términos y Condiciones</a> - <a href="#">Aviso de Privacidad</a></p>
+</footer>
+
+<script>
+    const data = {
+        gender: [
+            { label: 'Femenino', value: 50, color: 'linear-gradient(90deg, #4CAF50, #81C784)' },
+            { label: 'Masculino', value: 20, color: 'linear-gradient(90deg, #FFC107, #FFD54F)' }
+        ],
+        age: [
+            { label: 'Edad 0-6', value: 25, color: 'linear-gradient(90deg, #03A9F4, #4FC3F7)' },
+            { label: 'Edad 7-12', value: 24, color: 'linear-gradient(90deg, #E91E63, #F06292)' },
+            { label: 'Edad 13-17', value: 12, color: 'linear-gradient(90deg, #9C27B0, #BA68C8)' }
+        ],
+        location: [
+            { label: 'Estado de México', value: 10, color: 'linear-gradient(90deg, #FF9800, #FFC107)' },
+            { label: 'Estado de Hidalgo', value: 10, color: 'linear-gradient(90deg, #795548, #A1887F)' },
+            { label: 'Ciudad de México', value: 10, color: 'linear-gradient(90deg, #607D8B, #B0BEC5)' }
+        ]
+    };
+
+    function renderChart(containerId, chartData) {
+        const container = document.getElementById(containerId);
+        chartData.forEach(item => {
+            const bar = document.createElement('div');
+            bar.className = 'bar';
+
+            const label = document.createElement('span');
+            label.className = 'bar-label';
+            label.textContent = item.label;
+
+            const value = document.createElement('div');
+            value.className = 'bar-value';
+            value.style.width = item.value + '%';
+            value.style.background = item.color;
+            value.textContent = item.value + '%';
+
+            bar.appendChild(label);
+            bar.appendChild(value);
+            container.appendChild(bar);
+        });
+    }
+
+    renderChart('chart-gender', data.gender);
+    renderChart('chart-age', data.age);
+    renderChart('chart-location', data.location);
+</script>
+</body>
+</html>
