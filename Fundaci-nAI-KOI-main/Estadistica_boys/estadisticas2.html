@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas Discapacitados</title>
+    <link rel="stylesheet" href="../stylesEVENTO.css">
+    <link rel="icon" href="imagenes/logo-ai-koi.ico">
+    <style>
+        /* Contenedor principal de la gráfica */
+        .chart-container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .chart-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        /* Gráfico de barras horizontales */
+        .bar-chart {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bar-label {
+            width: 100px;
+            text-align: right;
+        }
+
+        .bar-value {
+            height: 30px;
+            background: linear-gradient(90deg, #4CAF50, #81C784);
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .bar-value.dibujo { width: 25%; background: linear-gradient(90deg, #4CAF50, #81C784); }
+        .bar-value.musica { width: 25%; background: linear-gradient(90deg, #FFC107, #FFD54F); }
+        .bar-value.deporte { width: 15%; background: linear-gradient(90deg, #03A9F4, #4FC3F7); }
+        .bar-value.baile { width: 25%; background: linear-gradient(90deg, #E91E63, #F06292); }
+        .bar-value.lectura { width: 10%; background: linear-gradient(90deg, #9C27B0, #BA68C8); }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://"><u>Inicio</u></a></li>
+                <li><a href="https://"><u>Sobre Nosotros</u></a></li>
+                <li><a href="https://"><u>Servicios</u></a></li>
+                <li><a href="https://"><u>Contacto</u></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="event-section">
+        <div class="left-side">
+            <div class="user-icon">
+                <img src="../imagenes/ADMING.png" alt="Icono de Usuario">
+            </div>
+            <h2>Estadísticas Discapacitados</h2>
+        </div>
+
+        <!-- Contenedor de la gráfica -->
+        <div class="chart-container">
+            <div class="chart-title">Distribución de Participación</div>
+            <div class="bar-chart">
+                <div class="bar">
+                    <span class="bar-label">Femenino</span>
+                    <div class="bar-value dibujo">25%</div>
+                </div>
+                <div class="bar">
+                    <span class="bar-label">Masculino</span>
+                    <div class="bar-value musica">25%</div>
+                </div>
+                <div class="bar">
+                    <span class="bar-label">Edad 0-17</span>
+                    <div class="bar-value deporte">15%</div>
+                </div>
+                <div class="bar">
+                    <span class="bar-label">Edad 18-59</span>
+                    <div class="bar-value baile">25%</div>
+                </div>
+                <div class="bar">
+                    <span class="bar-label">Edad 60-mas</span>
+                    <div class="bar-value lectura">10%</div>
+                </div>
+                <div class="bar">
+                    <span class="bar-label">Estado de México</span>
+                    <div class="bar-value lectura">10%</div>
+                </div>
+                <div class="bar">
+                    <span class="bar-label">Estado de Hidalgo</span>
+                    <div class="bar-value lectura">10%</div>
+                </div>
+                <div class="bar">
+                    <span class="bar-label">Ciudad de México</span>
+                    <div class="bar-value lectura">10%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="../imagenes/facebook.png" alt="Facebook" height="30px"></a>
+            <a href="#"><img src="../imagenes/Tik-tok.png" alt="Tik-Tok" height="30px"></a>
+            <a href="#"><img src="../imagenes/Twiter.png" alt="Twitter" height="30px"></a>
+            <a href="#"><img src="../imagenes/instagram.png" alt="Instagram" height="30px"></a>
+            <a href="#"><img src="../imagenes/WhatsApp.png" alt="WhatsApp" height="30px"></a>
+            <a href="#"><img src="../imagenes/Gmail.png" alt="Gmail" height="30px"></a>
+            <a href="#"><img src="../imagenes/You tube.png" alt="YouTube" height="30px"></a>
+            <a href="#"><img src="../imagenes/Linkedin.png" alt="Linkedin" height="30px"></a>
+        </div>
+        <p>Fundación Ai Koi - <a href="#">Términos y Condiciones</a> - <a href="#">Aviso de Privacidad</a></p>
+    </footer>
+</body>
+</html>
